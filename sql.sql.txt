@@ -1,0 +1,21 @@
+CREATE TABLE `dle_comments` (
+	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`post_id` INT(11) NOT NULL DEFAULT '0',
+	`user_id` MEDIUMINT(8) NOT NULL DEFAULT '0',
+	`date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+	`autor` VARCHAR(40) NOT NULL DEFAULT '',
+	`email` VARCHAR(40) NOT NULL DEFAULT '',
+	`text` TEXT NOT NULL,
+	`ip` VARCHAR(16) NOT NULL DEFAULT '',
+	`is_register` TINYINT(1) NOT NULL DEFAULT '0',
+	`approve` TINYINT(1) NOT NULL DEFAULT '1',
+	`user_agent` VARCHAR(64) NOT NULL DEFAULT '',
+	PRIMARY KEY (`id`),
+	INDEX `user_id` (`user_id`),
+	INDEX `post_id` (`post_id`),
+	INDEX `approve` (`approve`),
+	FULLTEXT INDEX `text` (`text`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=MyISAM
+AUTO_INCREMENT=21;
