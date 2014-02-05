@@ -1,4 +1,3 @@
-
 <?php
 include ('cackle_sync.php');
 
@@ -31,7 +30,7 @@ function cackle_activate(){
 }
 
 function export_comment($post,$eof=false){
-    require_once ENGINE_DIR . '/modules/cackle/export.php';
+    require_once(dirname(__FILE__) . '/cackle_sync.php');
     $url = HOME_URL . "index.php?newsid=" . $post;
     $wxr = cackle_export_wp($post, $url);
     global $cackle_api;
