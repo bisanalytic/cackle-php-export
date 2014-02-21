@@ -37,11 +37,4 @@ cackle_widget.push({widget: 'Comment', id: $site_id, channel: '$object_id'});
 1.Удостовериться, что в бд с комментариями лежат необходимые для экспорта комментарии и идентификатор поста находится в поле post_id(вы можете изменить поля, тогда потребуется в функции cackle_export_wp в $comments_query = "SELECT * FROM ".PREFIX."_comments WHERE post_id = $post" post_id заменить на ваше поле идентификатора.. для joomla это object_id) 
 и в этом же файле в <wp:comment> проставить у $c соответствующие поля вашей БД.
 
-2. Нажать кнопку Export comments.
-
-
-
-
-Синхронизация
-
-P.S. данное решение только для экспорта с вашего сервера на Cackle.. для синхронизации - https://bitbucket.org/cackle-plugin/comment-php/
+2.Нажать кнопку Export comments.
