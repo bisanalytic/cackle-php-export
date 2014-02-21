@@ -1,4 +1,4 @@
-Сackle PHP - решение для экспорта комментариев в Cackle
+Сackle PHP Export - решение для экспорта комментариев в Cackle
 ==========
 Данное решение позволяет экспортировать комментарии Cackle в сайт на PHP и включает:
 
@@ -39,4 +39,4 @@ cackle_widget.push({widget: 'Comment', id: $site_id, channel: '$object_id'});
 
 Синхронизация
 
-P.S. данное решение стоит использовать для экспорта.. для синхронизации - https://bitbucket.org/cackle-plugin/comment-php/
+P.S. данное решение только для экспорта с вашего сервера на Cackle.. для синхронизации - https://bitbucket.org/cackle-plugin/comment-php/
